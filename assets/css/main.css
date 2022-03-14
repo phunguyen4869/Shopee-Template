@@ -25,6 +25,7 @@
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
+    position: relative;
 }
 
 .navbar-item:hover,
@@ -55,4 +56,46 @@
     color: var(--white-color);
     font-size: 1.4rem;
     margin-right: 8px;
+}
+
+.header_qr {
+    width: 184px;
+    height: 250px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 200%;
+    border-radius: 3px;
+    display: none;
+}
+
+.header_qr::before {
+    position: absolute;
+    width: 60%;
+    height: 30px;
+    left: -10px;
+    top: -30px;
+    content: "";
+    display: block;    
+}
+
+.navbar-item-qr:hover .header_qr {
+    animation: fadein 0.3s ease-in-out;
+    display: block;
+}
+
+.header_qr-img {
+    width: 100%;
+}
+
+.header_qr-store {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header_qr-store-img {
+    margin-top: 4px;
+    height: 18px;
 }
