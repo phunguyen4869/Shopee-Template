@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/image/title-logo.png" type="image/x-icon">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -15,13 +16,13 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css">
-    <title>Document</title>
+    <title>Shopee Việt Nam</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="grid">
+            <div class="grid nav-wrapper">
                 <nav class="header_navbar">
                     <ul class="header_navbar-list">
                         <li class="navbar-item navbar-item-separator">Kênh Người
@@ -94,7 +95,7 @@
                             </a>
 
                             <div class="header_language">
-                                <a href="#" class="header_language-item">                                    
+                                <a href="#" class="header_language-item">                       
                                     <p class="header_language-caption">Tiếng Việt</p>
                                 </a>
 
@@ -112,6 +113,34 @@
                     </ul>
                 </nav>
             </div>
+
+            <div class="grid header_search-wrapper">
+                <div class="header_logo">
+                    <a href="#" class="header_logo-link">
+                        <img src="./assets/image/logo.png" alt="Logo" class="header_logo-img">
+                    </a>
+                </div>
+
+                <div class="header_search">
+                    <form action="#" class="header_search-bar">
+                        <input type="text" class="header_search-input" placeholder="Tìm sản phẩm, thương hiệu và tên shop">
+                        <button class="header_search-btn">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="header_cart">
+                    <a href="#" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cart_list">
+                <img src="./assets/image/empty-cart.png" alt="Empty Cart" class="cart_list-img">
+                <p class="cart_list-caption">Chưa có sản phẩm</p>
+            </div>
         </header>
 
         <div class="container">
@@ -123,5 +152,8 @@
         </footer>
     </div>
 </body>
+
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/main.js"></script>
 
 </html>
