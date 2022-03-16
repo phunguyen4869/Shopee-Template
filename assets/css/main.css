@@ -290,18 +290,17 @@
     justify-content: center;
     border-radius: 3px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    z-index: 999;
 }
 
 .cart_list::before {
     content: "";
     border-bottom: 20px solid rgb(255, 255, 255);
     border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    bottom: 345px;
+    border-right: 20px solid transparent;    
     position: absolute;
     right: 131px;
-    top: 84px;
-    z-index: 999;
+    top: 84px;    
 }
 
 .cart-icon {
